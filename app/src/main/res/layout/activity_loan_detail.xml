@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/background1"
+    tools:context=".LoanDetail">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_65sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:textAllCaps="true"
+            android:id="@+id/pro_of"
+            android:layout_below="@+id/logo"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="@string/loan_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/content"
+            android:layout_below="@+id/pro_of"
+            android:paddingStart="@dimen/_20sdp"
+            android:paddingEnd="@dimen/_20sdp"
+            android:textSize="@dimen/_14sdp"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/all_the_information_you_provide_is_encrypted_and_secured"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:padding="@dimen/_5sdp"
+            android:background="@drawable/roundconner_border"
+            android:layout_below="@+id/content"
+            android:id="@+id/reypay_rel"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:id="@+id/clock"
+                android:src="@drawable/clock"
+                android:layout_width="@dimen/_17sdp"
+                android:layout_height="@dimen/_17sdp" />
+            <EditText
+                android:digits="123456"
+                android:maxLength="1"
+                android:inputType="number"
+                android:id="@+id/reypay"
+                android:singleLine="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_toEndOf="@+id/clock"
+                android:hint="@string/repayment_1_6_months"
+                android:textColorHint="#666666"
+                android:textSize="@dimen/_12sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </EditText>
+        </RelativeLayout>
+        <RelativeLayout
+            android:padding="@dimen/_5sdp"
+            android:background="@drawable/roundconner_border"
+            android:layout_below="@+id/reypay_rel"
+            android:id="@+id/amount_rel"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:id="@+id/ksh"
+                android:text="@string/ksh"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_17sdp" />
+            <EditText
+                android:inputType="number"
+                android:id="@+id/amount"
+                android:singleLine="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_toEndOf="@+id/ksh"
+                android:hint="@string/enter_amount"
+                android:textColorHint="#666666"
+                android:textSize="@dimen/_12sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </EditText>
+        </RelativeLayout>
+
+        <Button
+            android:layout_below="@+id/amount_rel"
+            android:id="@+id/request_loan_btn"
+            android:text="@string/request_for_loan"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_15sdp"
+            android:layout_gravity="center"
+            android:elevation="@dimen/_6sdp"
+            android:background="@drawable/buttonroundconner"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_40sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp" />
+        <TextView
+            android:layout_below="@+id/request_loan_btn"
+            android:id="@+id/already_tv"
+            android:textSize="@dimen/_13sdp"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:paddingStart="@dimen/_20sdp"
+            android:paddingEnd="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:text="@string/already_applied_check_loan_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_below="@+id/already_tv"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:layout_alignParentStart="true"
+                android:id="@+id/fag_btn"
+                android:text="@string/faq"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_13sdp"
+                android:elevation="@dimen/_6sdp"
+                android:background="@drawable/buttonroundconner_orange"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_33sdp" />
+            <Button
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_15sdp"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/refer_earn_btn"
+                android:text="@string/refer_earn"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_13sdp"
+                android:layout_gravity="center"
+                android:elevation="@dimen/_6sdp"
+                android:background="@drawable/buttonroundconner_orange"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_33sdp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

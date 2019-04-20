@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "219997226987",
+    "firebase_url": "https://pepealoans.firebaseio.com",
+    "project_id": "pepealoans",
+    "storage_bucket": "pepealoans.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:219997226987:android:e2cdbfecde1556f6",
+        "android_client_info": {
+          "package_name": "com.pepealoans.manu.pepealoans"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "219997226987-ckig317c5vp2m98t7rc4c14nola8taag.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pepealoans.manu.pepealoans",
+            "certificate_hash": "db2637fc30316ea117dd0233e40d9580ce9754b5"
+          }
+        },
+        {
+          "client_id": "219997226987-5vnoqjemauag9lu75taije6tkhuqv25c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJuj5rH6lVuxDANCOgl0vKzkHtuJI_TSs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "219997226987-5vnoqjemauag9lu75taije6tkhuqv25c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
